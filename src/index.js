@@ -31,10 +31,47 @@ function App() {
       avatarUrl: 'http://placekitten.com/g/64/64',
     },
   };
+  const cities = {
+    cities: [
+          'Manchester',
+          'Madrid',
+          'Catalonia',
+          'London',
+          'Milan',
+          'Munich',
+          'Paris'
+      ]
+ };
   return (
     <div className="container">
       <div className="blog-header py-3">
         <Header />
+        
+      </div>
+      <div classNmae="container">
+      <ul className="nav cities">
+        <li className="nav-item">
+          <a className="nav-link active" href="#">Manchester</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Madrid</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">London</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Catalonia</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Munich</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Milan</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Paris</a>
+        </li>
+      </ul>
       </div>
       <Abc name="Sara" className="space-top"/>
       <Abc name="Cahal" />
