@@ -11,9 +11,13 @@
 // render(<MainApp />, document.getElementById('app'));
 import React from 'react';
 import { render} from 'react-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {Abc} from './module';
+import styles from './styles.css'
 import Clock from './clock';
 import Comment from './comment';
+import Header from './header';
+
 if (module.hot) {
   module.hot.accept();
 }
@@ -28,8 +32,11 @@ function App() {
     },
   };
   return (
-    <div>
-      <Abc name="Sara" />
+    <div className="container">
+      <div className="blog-header py-3">
+        <Header />
+      </div>
+      <Abc name="Sara" className="space-top"/>
       <Abc name="Cahal" />
       <Abc name="Edite" />
       <Clock />

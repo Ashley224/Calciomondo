@@ -2,7 +2,7 @@
  * styles.css
  */
  body {
-    background: green;
+    background: #FFFFFF;
   }
   .globalClass {
     color: blue;
@@ -10,3 +10,18 @@
   :local(.localClass) {
     color: red;
   }
+  .blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 25px
+  }
+  
+  .blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+  }
+  
+  .blog-header-logo:hover {
+    text-decoration: none;
+  }
+  
